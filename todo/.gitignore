@@ -1,0 +1,17 @@
+# 빌드 결과물
+target/
+
+# STS / Eclipse 설정 파일
+.project
+.classpath
+.settings/
+.factorypath
+.springBeans
+.sts4-cache/
+
+# IntelliJ
+.idea/
+*.iml
+
+# 기타
+*.log
