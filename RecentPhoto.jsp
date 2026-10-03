@@ -1,14 +1,12 @@
 <!-- Programming
 ***********************************************************************
-// ------------------------------------------------------------------------------
-//      ³¯Â¥     |                     º¯°æ³»¿ë
-// ------------------------------------------------------------------------------
+// ìˆ˜ì •í…ŒìŠ¤íŠ¸ìž…ë‹ˆë‹¤ 2026-10-03 09:54
 // ******************************************************************************
 -->
 <%@ include file="../common/jsp/common.jsp"%>
 <HTML>
 <HEAD>
-<TITLE>ÇöÀå¼Ò½Ä</TITLE>
+<TITLE>ï¿½ï¿½ï¿½ï¿½Ò½ï¿½</TITLE>
 <%
     String projectId    = cm.getProjectId();
 
@@ -46,20 +44,20 @@
         
     }
 
-    //±ÇÇÑÀÌ ¾ø´Ù´Â ¸Þ½ÃÁö ¶ç¿ì±â: ±ÇÇÑÀÚ:su(1),pm(3),newseditor(8)ÀÌ¿ÜÀÇ »ç¶÷¿¡°Ô´Â ¹«Á¶°Ç ´ÙÀ½ ¸Þ½ÃÁö¸¦ ¶ç¿î´Ù.
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ù´ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:su(1),pm(3),newseditor(8)ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
     function privilegeAlert(){
     
-        alert("±ÇÇÑÀÌ ¾ø½À´Ï´Ù ! ");
+        alert("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ! ");
     }
 
 </SCRIPT>
 <style type="text/css">
 <!--
     TD{font-size:8pt; font-family:verdana; COLOR: #666666;}
-    a:link {font-size:8pt; font-family:µ¸¿ò,Verdana; text-decoration:none; COLOR: #666666;} /***±âº» È¸»ö text ¸µÅ©****/
-    a:visited {font-size:8pt; font-family:µ¸¿ò,Verdana; text-decoration:none; COLOR: #666666;}
-    a:active  {font-size:8pt; font-family:µ¸¿ò,Verdana; text-decoration:none; COLOR: #666666;}
-    a:hover {font-size:8pt;; font-family:µ¸¿ò,Verdana; text-decoration:none; COLOR: #FF8000;}
+    a:link {font-size:8pt; font-family:ï¿½ï¿½ï¿½ï¿½,Verdana; text-decoration:none; COLOR: #666666;} /***ï¿½âº» È¸ï¿½ï¿½ text ï¿½ï¿½Å©****/
+    a:visited {font-size:8pt; font-family:ï¿½ï¿½ï¿½ï¿½,Verdana; text-decoration:none; COLOR: #666666;}
+    a:active  {font-size:8pt; font-family:ï¿½ï¿½ï¿½ï¿½,Verdana; text-decoration:none; COLOR: #666666;}
+    a:hover {font-size:8pt;; font-family:ï¿½ï¿½ï¿½ï¿½,Verdana; text-decoration:none; COLOR: #FF8000;}
 //-->
 </style>
 </head>
@@ -82,7 +80,7 @@
     int MAX_TITLE_LENGTH=10;
 	if (rs2.getRowCount() == 0) {
 %>
-			<td align=center colspan=3><%=Util.getLang(service,"µî·ÏµÈ ÀÚ·á°¡ ¾ø½À´Ï´Ù","There is no data.")%></td>
+			<td align=center colspan=3><%=Util.getLang(service,"ï¿½ï¿½Ïµï¿½ ï¿½Ú·á°¡ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½","There is no data.")%></td>
 <%
     }    
     for (int i=1;i<=3&&rs2.next();i++) { %>        
@@ -94,8 +92,8 @@
         || ((rs2.get(5).trim()).toUpperCase()).endsWith("MPEG")
         || ((rs2.get(5).trim()).toUpperCase()).endsWith("MOV") ) { 
 
-         //¿ø·¡´Â ÆÄÀÏ°æ·Î¿¡ rs2.get(1)À» »ç¿ëÇÏ¸é µÇ´Âµ¥...ÀÎÄÚµù¿¡ ¹®Á¦°¡ ÀÖ¾î¼­
-         //strFolderPath´Â ±×´ë·Î....rs2.get(2)=ÆÄÀÏ¸í¸¸ ÀÎÄÚµù ÇÑ¹ø ÇØÁØ´Ù.
+         //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï°ï¿½Î¿ï¿½ rs2.get(1)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Ç´Âµï¿½...ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾î¼­
+         //strFolderPathï¿½ï¿½ ï¿½×´ï¿½ï¿½....rs2.get(2)=ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½Úµï¿½ ï¿½Ñ¹ï¿½ ï¿½ï¿½ï¿½Ø´ï¿½.
         strFolderPath = rs2.get(1).substring(0, rs2.get(1).lastIndexOf('/'));
         strFileName   = java.net.URLEncoder.encode( rs2.get(1).substring((rs2.get(1).lastIndexOf('/'))+1) );
  %>
@@ -114,13 +112,13 @@
    
                 if( Util.getLength(rs2.get(3)) > MAX_TITLE_LENGTH ) {
             %>
-                <%//2003-03-21 µ¿¿µ»ó °ü·Ã µ¿¿µ»ó ¹Ù·Î¶ç¿ì±â
+                <%//2003-03-21 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù·Î¶ï¿½ï¿½ï¿½
                  if ( ((rs2.get(5).trim()).toUpperCase()).endsWith("AVI")  
                     || ((rs2.get(5).trim()).toUpperCase()).endsWith("MPG")
                     || ((rs2.get(5).trim()).toUpperCase()).endsWith("MPEG")
                     || ((rs2.get(5).trim()).toUpperCase()).endsWith("MOV") ) { 
-                     //¿ø·¡´Â ÆÄÀÏ°æ·Î¿¡ rs2.get(1)À» »ç¿ëÇÏ¸é µÇ´Âµ¥...ÀÎÄÚµù¿¡ ¹®Á¦°¡ ÀÖ¾î¼­
-                     //strFolderPath´Â ±×´ë·Î....rs2.get(2)=ÆÄÀÏ¸í¸¸ ÀÎÄÚµù ÇÑ¹ø ÇØÁØ´Ù.
+                     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï°ï¿½Î¿ï¿½ rs2.get(1)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Ç´Âµï¿½...ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾î¼­
+                     //strFolderPathï¿½ï¿½ ï¿½×´ï¿½ï¿½....rs2.get(2)=ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½Úµï¿½ ï¿½Ñ¹ï¿½ ï¿½ï¿½ï¿½Ø´ï¿½.
                      strFolderPath= rs2.get(1).substring(0, rs2.get(1).lastIndexOf('/'));
                      strFileName    = java.net.URLEncoder.encode( rs2.get(1).substring((rs2.get(1).lastIndexOf('/'))+1) );
                 %>
@@ -130,13 +128,13 @@
                 <%}%>
                 
             <%}else{%>                
-                <%//2003-03-21 µ¿¿µ»ó °ü·Ã µ¿¿µ»ó ¹Ù·Î¶ç¿ì±â
+                <%//2003-03-21 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù·Î¶ï¿½ï¿½ï¿½
                  if ( ((rs2.get(5).trim()).toUpperCase()).endsWith("AVI")  
                     || ((rs2.get(5).trim()).toUpperCase()).endsWith("MPG")
                     || ((rs2.get(5).trim()).toUpperCase()).endsWith("MPEG")
                     || ((rs2.get(5).trim()).toUpperCase()).endsWith("MOV") ) {
-                     //¿ø·¡´Â ÆÄÀÏ°æ·Î¿¡ rs2.get(1)À» »ç¿ëÇÏ¸é µÇ´Âµ¥...ÀÎÄÚµù¿¡ ¹®Á¦°¡ ÀÖ¾î¼­
-                     //strFolderPath´Â ±×´ë·Î....rs2.get(2)=ÆÄÀÏ¸í¸¸ ÀÎÄÚµù ÇÑ¹ø ÇØÁØ´Ù.
+                     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï°ï¿½Î¿ï¿½ rs2.get(1)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Ç´Âµï¿½...ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾î¼­
+                     //strFolderPathï¿½ï¿½ ï¿½×´ï¿½ï¿½....rs2.get(2)=ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½Úµï¿½ ï¿½Ñ¹ï¿½ ï¿½ï¿½ï¿½Ø´ï¿½.
                      strFolderPath= rs2.get(1).substring(0, rs2.get(1).lastIndexOf('/'));
                      strFileName    = java.net.URLEncoder.encode( rs2.get(1).substring((rs2.get(1).lastIndexOf('/'))+1) );
                 %>
