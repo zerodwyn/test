@@ -1,5 +1,8 @@
 <!-- Programming
 ***********************************************************************
+// ìˆ˜ì •í…ŒìŠ¤íŠ¸ìž…ë‹ˆë‹¤ 2026-10-03 09:16
+// ìˆ˜ì • ì¶”ê°€ 2026-10-03 11:13
+// ìˆ˜ì • ì¶”ê°€2 2026-10-03 11:17
 ***********************************************************************
 -->
 <%@ include file="../common/jsp/common.jsp"%>
@@ -11,10 +14,10 @@
 	String volume		= cm.getRaidVolume();
 	int    pageCnt      = Integer.parseInt(Util.nullCheck(request.getParameter("pageCnt"),"3"));
 	
-	String isGsEmp		=cm.getIsGsEmp();		//GS³»ºÎ Á÷¿ø ¿©ºÎ: ³»ºÎÁ÷¿ø(3)
+	String isGsEmp		=cm.getIsGsEmp();		//GSï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(3)
 
 	
-	//**********ÇöÀå¼Ò½Ä rsNews¸¦ °¡Á®¿À´Â ºÎºÐ ½ÃÀÛ****************
+	//**********ï¿½ï¿½ï¿½ï¿½Ò½ï¿½ rsNewsï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Îºï¿½ ï¿½ï¿½ï¿½ï¿½****************
 	String sf = "ps_recentnews.ListNews";
 	
 	DBManager dao = new DBManager();	
@@ -29,7 +32,7 @@
 		stmt.add("");
 		stmt.add(isGsEmp);
 
-	//±×À§Ä¡ÀÇ Data¸¦ pageSize¸¸Å­ RecordSet¿¡ ³Ö´Â´Ù.
+	//ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ Dataï¿½ï¿½ pageSizeï¿½ï¿½Å­ RecordSetï¿½ï¿½ ï¿½Ö´Â´ï¿½.
 	CRecordSet rsNews = dao.selectCall(stmt);
 	if (rsNews.getReturnCode() == 0) {
 		response.sendRedirect(Util.ePage("PG","",rsNews.getReturnCode(),sf,"ProjectNewsMain.jsp"));
@@ -70,7 +73,7 @@
 	
 	if (rsNews.getRowCount() == 0) {
 %>
-			<td align=center colspan=4><%=Util.getLang(service,"µî·ÏµÈ ÀÚ·á°¡ ¾ø½À´Ï´Ù","There is no data")%>!!!</td>
+			<td align=center colspan=4><%=Util.getLang(service,"ï¿½ï¿½Ïµï¿½ ï¿½Ú·á°¡ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½","There is no data")%>!!!</td>
 <%
     }
     for (int i=1;i<=pageCnt&&rsNews.next();i++) {
@@ -95,8 +98,8 @@
 		<%}else{%>
 			<A Href='#' onClick="javascript:parent.openUrl_EWS('NEWS','RecentNews_View.jsp?bbs_id=<%=rsNews.get(1)%>&bbs_cnt=<%=rsNews.get(11)%>','');top.EIPBannerFrame.fun_onClick1('menu03');">
 		<%}%>
-		<% if(!projectType.equals("UP")){		//Æ÷Å»ÀÌ ¾Æ´Ò¶§...
-				if(rsNews.get(10).equals("0") || rsNews.get(10).equals(jobNo) || rsNews.get(9).equals("4")  || rsNews.get(9).equals("5")  || rsNews.get(9).equals("6")) { //ÇÁ·ÎÁ§Æ®¾ÆµÚ 0ÀÌ ¾Æ´Ï°Å³ª ÇöÀç ÇÁ·ÎÁ§Æ®¿ÍÀÇ Àâ³Ñ¹ö°¡ °°À»¶§
+		<% if(!projectType.equals("UP")){		//ï¿½ï¿½Å»ï¿½ï¿½ ï¿½Æ´Ò¶ï¿½...
+				if(rsNews.get(10).equals("0") || rsNews.get(10).equals(jobNo) || rsNews.get(9).equals("4")  || rsNews.get(9).equals("5")  || rsNews.get(9).equals("6")) { //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½Æµï¿½ 0ï¿½ï¿½ ï¿½Æ´Ï°Å³ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 					if( Util.getLength(rsNews.get(2)) > MAX_TITLE_LENGTH_NEWS ) {
 						out.print(Util.cutString(rsNews.get(2),MAX_TITLE_LENGTH_NEWS)+"...");
 					}else{
@@ -104,12 +107,12 @@
 					}
 				}else{
 					if( Util.getLength(rsNews.get(2)) > MAX_TITLE_LENGTH_NEWS ) {
-						out.println("<b>[Æ÷Å»¼Ò½Ä]</b>"+Util.cutString(rsNews.get(2),MAX_TITLE_LENGTH_NEWS)+"...");
+						out.println("<b>[ï¿½ï¿½Å»ï¿½Ò½ï¿½]</b>"+Util.cutString(rsNews.get(2),MAX_TITLE_LENGTH_NEWS)+"...");
 					}else{
-						out.println("<b>[Æ÷Å»¼Ò½Ä]</b>"+rsNews.get(2));
+						out.println("<b>[ï¿½ï¿½Å»ï¿½Ò½ï¿½]</b>"+rsNews.get(2));
 					}
 				}
-		} else {								//Æ÷Å»¿¡¼­´Â ¹«Á¶°Ç ´ÙÀ½ÇüÅÂ
+		} else {								//ï¿½ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				if( Util.getLength(rsNews.get(2)) > MAX_TITLE_LENGTH_NEWS ) {
 					out.print(Util.cutString(rsNews.get(2),MAX_TITLE_LENGTH_NEWS)+"...");
 				}else{

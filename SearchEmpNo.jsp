@@ -1,3 +1,9 @@
+<!-- Programming
+***********************************************************************
+// ì‚¬ì›ë²ˆí˜¸ê²€ìƒ‰ ìˆ˜ì •1 2026-10-03 09:16
+***********************************************************************
+-->
+
 <%@ include file="../common/jsp/common.jsp"%>
 <html>
 <head>
@@ -70,7 +76,7 @@
     <td class="pop_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td width="91%" class="pop_title">
-            <img src="<%=Util.getImgPath(service)%>/icon_pop.gif" width="20" height="20" align="absmiddle"><%=Util.getLang(service, "»ç¿ëÀÚ °Ë»ö","Search User")%></td>
+            <img src="<%=Util.getImgPath(service)%>/icon_pop.gif" width="20" height="20" align="absmiddle"><%=Util.getLang(service, "ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½","Search User")%></td>
           <td width="9%">&nbsp;</td>
         </tr>
       </table></td>
@@ -87,14 +93,14 @@
       </tr>
       <tr> 
         <td colspan="2" > 
-          <!--±¸¼º¿ø¸®½ºÆ®-->
+          <!--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®-->
           <div class="tree" id="Layer" style="position:static;width:100%;height:100%;overflow-y:auto;" align="center"> 
             <table width="100%" border="0" cellpadding="0" cellspacing="1" class="table">
             <tr class="mtd_01" height = 20>
-              <td align = center width="25%"><b><%=Util.getLang(service, "ÀÌ¸§","Name")%></b></center>
-              <td align = center width="15%"><b><%=Util.getLang(service, "»ç¹ø","Emp No.")%></b></td>
-              <td align = center width="30%"><b><%=Util.getLang(service, "Á÷À§","Job Title")%></b></center>
-              <td align = center width="30%"><b><%=Util.getLang(service, "Á¶Á÷","Group")%></b></td>              
+              <td align = center width="25%"><b><%=Util.getLang(service, "ï¿½Ì¸ï¿½","Name")%></b></center>
+              <td align = center width="15%"><b><%=Util.getLang(service, "ï¿½ï¿½ï¿½","Emp No.")%></b></td>
+              <td align = center width="30%"><b><%=Util.getLang(service, "ï¿½ï¿½ï¿½ï¿½","Job Title")%></b></center>
+              <td align = center width="30%"><b><%=Util.getLang(service, "ï¿½ï¿½ï¿½ï¿½","Group")%></b></td>              
             </tr>
             <tr height="1"> 
               <td colspan="4" class="mtl_01"></td>
@@ -134,7 +140,7 @@
     if ( (num==0 ) && (is_one.equals("T"))) {
 %>
 <Script language="javascript">
-       alert("ÀÔ·ÂÇÑ ÀÌ¸§ÀÇ ¼ö½ÅÀÎÀÌ ¾ø½À´Ï´Ù.");
+       alert("ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
        self.close();
 </script>
 <%  
